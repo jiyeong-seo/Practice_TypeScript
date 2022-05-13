@@ -14,9 +14,9 @@
 
 // console.log(numberArray);
 // =======================================================
-const getLastSubject = (subjects: { subject: string | string[] }) => {
-  if (typeof subjects.subject === "object") {
-    const lastItem = subjects.subject.length - 1;
+const getLastSubject = (subjects: { subject: string | string[] }): string => {
+  if (Array.isArray(subjects.subject)) {
+    const lastItem: number = subjects.subject.length - 1;
 
     return subjects.subject[lastItem];
   } else {
