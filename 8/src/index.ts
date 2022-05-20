@@ -7,3 +7,11 @@ const rockPaperScissors = (
 const result = rockPaperScissors("가위");
 
 console.log(result);
+
+type NumOut = (x: number, y: number) => number;
+
+let foo: NumOut = (x, y) => {
+  return x + y;
+};
+
+foo(10, 11);
