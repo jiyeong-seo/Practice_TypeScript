@@ -29,3 +29,5 @@ let userInfo: Member = {
     console.log("안녕");
   }
 };
+
+userInfo.changeName();
