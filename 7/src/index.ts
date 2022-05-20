@@ -14,8 +14,12 @@
 
 // let position: PositionXY = { x: 10, y: 20 };
 //================================================================
-type join = {
+type Join = {
   name: string;
   phone: number;
   email: string;
 };
+//================================================================
+type Minor = { Minor: boolean };
+
+type JoinFinal = Join & Minor;
